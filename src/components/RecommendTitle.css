@@ -1,0 +1,38 @@
+.subtitle-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.title-row{
+    display: flex;
+    gap: 1dvh;
+    align-items: center;
+}
+.title-column{
+    display: flex;
+    flex-direction: column;
+}
+.title-icon{
+    display: flex;
+    align-items: center;
+    gap: 1dvh;
+}
+.title-with-icon{
+    width: 3dvh;
+    height: 3dvh;
+}
+.back-icon{
+ padding-bottom: 0;
+ margin:0;
+}
+.title{
+    font-size: 2.5dvh;
+    font-weight: bold;
+    margin:0;
+    padding-bottom: 0;
+}
+.sub-title{
+    font-size: 2dvh;
+    font-weight: 500;
+    margin:0;
+
+}

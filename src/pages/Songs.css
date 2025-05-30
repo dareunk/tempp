@@ -1,0 +1,69 @@
+.music-container{
+    width: 100%;
+    height: 70dvh;
+    max-height: 70dvh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-between; /*가운데 정렬*/
+    box-sizing: border-box; /* 패딩 계산 포함 */
+    margin:0;
+    position: relative;
+}   
+.music-inner-container{
+    width:100%;
+    height: 100%;
+    max-height:60dvh; /* inner-container의 최대 height=60dvh 이를 넘어가면 스크롤로 넘겨줌 */
+    position: absolute;
+    top:0;
+    overflow-y: auto;
+    padding-right: 0.5dvh;
+  
+}
+.music-inner-container::-webkit-scrollbar{
+    width: 6px;
+}
+.music-inner-container::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+.music-inner-container::-webkit-scrollbar-track{
+    background: transparent;
+}
+.music-content{
+    width:100%;
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 0.3dvh solid #E1E1E1;
+    border-radius:1dvh;
+    padding: 1dvh;
+    margin:0 auto;
+    margin-bottom:1.5dvh;
+    box-sizing: border-box;
+}
+.album-img{
+    width:25%;
+    height: 100%;
+}
+.music-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: flex-start; /*좌측 정렬*/
+    margin-left: 3dvh;
+    flex: 1;
+}
+.music-title{
+    font-weight: bold;
+    font-size: 2dvh;
+    margin-bottom: 1dvh;
+}
+.music-artist{
+    font-size: 2dvh;
+    font-weight: bold;
+    color: #686868;
+    margin-bottom: 0;
+}

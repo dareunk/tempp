@@ -1,0 +1,59 @@
+.wrapper{
+    margin-left: 5dvh;
+    margin-right: 5dvh;
+}
+
+.header{
+    width: 100%;
+    height: 20dvh;
+    max-height: 20dvh;
+    margin-bottom: 0;
+    padding-top:5dvh; 
+    position: relative;
+}
+.weather-box{
+    position:absolute;
+    width: 100%;
+    height:10dvh;
+    margin: 0 auto;
+    
+    display: block;
+    background: linear-gradient(to right, #bce0fd, #a4d1f2);
+    border-radius: 1vh;
+}
+.content{
+    width: 100%;
+    height: 70dvh;
+    max-height: 70dvh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-between; /*가운데 정렬*/
+    box-sizing: border-box; /* 패딩 계산 포함 */
+    padding-top:3dvh;
+    margin:0;
+
+}
+p{
+    margin-top:0;
+    margin-bottom: 0;
+}
+.recommendation-box{
+    width: 45%;
+    height: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1dvh;
+}
+.title{
+    font-size: 2.5dvh;
+    font-weight: bold;
+    margin:0;
+    padding-bottom: 1dvh;
+}
+.label{
+    font-size: 1.8dvh;
+    margin:0;
+    padding-bottom: 0;
+}

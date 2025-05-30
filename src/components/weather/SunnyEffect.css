@@ -1,0 +1,12 @@
+.sunny-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  /* ☀️ 밝고 맑은 날 느낌의 그라데이션 */
+  background: linear-gradient(to bottom, #87cefa 0%, #ffffff 100%);
+}

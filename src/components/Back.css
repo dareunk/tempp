@@ -1,0 +1,15 @@
+.back-container{
+    width:3dvh;
+    height:3dvh;
+    cursor: pointer;
+    display: flex;
+}
+
+.back-icon-inactive{
+    color: #D9D9D9;
+    transition: fill 0.2s ease-in-out;
+}
+.back-icon-active{
+    color: #0032A0;
+    transition: fill 0.2s ease-in-out;
+}

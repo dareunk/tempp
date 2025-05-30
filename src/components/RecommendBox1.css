@@ -1,0 +1,44 @@
+.context-box{
+    width: 90%; 
+    height: 30%;
+    overflow-y: auto; /* 내용이 넘치는 경우만 scroll 표시함 */
+    margin:0 auto;
+}
+.context-box-saying{
+    text-align: center;
+}
+.context-box-fortune{
+    background-color:#FFFDBF;
+    border-radius: 1dvh;
+    padding: 2dvh;
+}
+.context-box::-webkit-scrollbar{
+    width: 1dvh;
+    height: 0.2dvh;
+}
+.context-box::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.context-box::-webkit-scrollbar-track{
+    background: transparent;
+}
+.context-box-saying{
+    font-size: 2.5dvh;
+}
+.context-box-fortune{
+    font-size: 2dvh;
+}
+.context-box p{
+    white-space: pre-wrap;
+    margin: 0;
+    margin-bottom:0;
+}
+.saying {
+    width: 3dvh;
+    height: 3dvh;
+    margin-bottom: 1dvh;
+}
+.saying-back{
+    transform: scaleX(-1) scaleY(-1);
+}

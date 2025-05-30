@@ -1,0 +1,55 @@
+.recommend-container{
+    width: 100%;
+    height: 70dvh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap : wrap;
+    box-sizing: border-box; /* 패딩 계산 포함 */
+    margin:0 auto;
+}
+.recommend-image{
+    position: relative;
+    width: 100%;
+    height: 50dvh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.food{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    border-radius: 2dvh;
+    
+}
+.book{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    border-radius: 2dvh;
+}
+.recommend-label{
+    text-align: center;
+    width: 100%;
+    height: 20dvh;
+}
+.food-name{
+  font-size: 2.5dvh;
+  font-weight: bold;
+  margin-top: 4dvh;
+}
+.book-title{
+    margin-top: 4dvh;
+    margin-bottom: 1dvh;
+    font-size: 2.5dvh;
+    font-weight: bold;
+}
+.book-author{
+    color: #686868;
+    margin-bottom: 1dvh;
+    font-size: 2.5dvh;
+    font-weight: bold;
+}

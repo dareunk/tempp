@@ -1,0 +1,44 @@
+name: NodeJS with Webpack
+
+on:
+  push:
+    branches: [ "develop" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Docker login
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+    
+
+    - name: Build and Push ARM64 Image blue
+      run: |
+        docker buildx build \
+          --platform linux/arm64 \
+          -t ${{ secrets.REGISTRY_HOST }}/itcen-front-blue:latest \
+          --push .
+          
+    - name: Deploy to private EC2 via Bastion
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.FRONT_HOST }}          # 🟥 프라이빗 EC2의 내부 IP
+        username: ${{ secrets.FRONT_USER }}
+        key: ${{ secrets.FRONT_KEY }}
+
+        proxy_host: ${{ secrets.EC2_HOST }}      # ✅ 퍼블릭 Bastion EC2
+        proxy_username: ${{ secrets.EC2_USER }}
+        proxy_key: ${{ secrets.EC2_KEY }}
+
+        script: |
+          chmod +x ./deploy.sh
+          sudo ./deploy.sh
+
+          

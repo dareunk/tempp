@@ -1,0 +1,18 @@
+
+.cloud-canvas {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cloud-canvas     { z-index: 9999; }
+.rain-canvas      { z-index: 2; }
+.lightning-canvas { z-index: 3; }
+.blur-canvas      { z-index: 4; }
+.sunny-canvas     { z-index: 0; }

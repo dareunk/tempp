@@ -1,0 +1,21 @@
+/*
+#root {
+  margin: 0 auto;
+  width: 740px;
+  border: 1px solid black;
+  text-align: center;
+  height:100%
+}
+*/
+#root {
+  position: fixed;
+  margin: 0 auto;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100dvw;
+  overflow: hidden;
+}
+
+:root {
+  --vh: 100%;
+}
+
